@@ -1,0 +1,12 @@
+{
+    "IsEncrypted": false,
+  "Values": {
+    "AzureWebJobsStorage": "[place your azure storage connection string key here];BlobEndpoint=https://[put your blob storage account name here].blob.core.windows.net/;TableEndpoint=https://[put your blob storage account name here].table.core.windows.net/;QueueEndpoint=https://[put your blob storage account name here].queue.core.windows.net/;FileEndpoint=https://[put your blob storage account name here].file.core.windows.net/",
+    "BlobStorageConnectionString": "[place your azure storage connection string key here]",
+    "FUNCTIONS_WORKER_RUNTIME": "dotnet",
+    "SpeechToTextSubscriptionKey": "[place your azure speech service key here]",
+    "SpeechToTextServiceRegion": "westeurope",
+    "AudioBlobUrlBase": "https://[put your blob storage account name here].blob.core.windows.net/audios/",
+    "UploadBlob": "netcoreconf2020"
+  }
+}

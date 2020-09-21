@@ -1,0 +1,17 @@
+{
+  "@odata.context": "https://{azureSearchUrl}/$metadata#datasources/$entity",
+  "name": "jsonaudiosdatasource",
+  "description": "blob that contains jons of processed audio tracks",
+  "type": "azureblob",
+  "subtype": null,
+  "credentials": {
+    "connectionString": "{azureStorageConnectioString}"
+  },
+  "container": {
+    "name": "netcoreconf2020",
+    "query": null
+  },
+  "dataChangeDetectionPolicy": null,
+  "dataDeletionDetectionPolicy": null,
+  "encryptionKey": null
+}

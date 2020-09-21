@@ -1,0 +1,38 @@
+{
+  "name": "netcoreconf2020indexer",
+  "description": "",
+  "dataSourceName": "jsonaudiosdatasource",
+  "skillsetName": "jsonskillsets",
+  "targetIndexName": "netcoreconf2020index",
+  "fieldMappings": [
+    {
+      "sourceFieldName": "metadata_storage_path",
+      "targetFieldName": "metadata_storage_path",
+      "mappingFunction": {
+        "name": "base64Encode"
+      }
+    }
+  ],
+  "outputFieldMappings": [
+    {
+      "sourceFieldName": "/document/SpeechText/people",
+      "targetFieldName": "people"
+    },
+    {
+      "sourceFieldName": "/document/SpeechText/locations",
+      "targetFieldName": "locations"
+    },
+    {
+      "sourceFieldName": "/document/SpeechText/keyphrases",
+      "targetFieldName": "keyphrases"
+    },
+    {
+      "sourceFieldName": "/document/language",
+      "targetFieldName": "language"
+    },
+    {
+      "sourceFieldName": "/document/SpeechText/translated_text",
+      "targetFieldName": "translated_text"
+    }
+  ]
+}
